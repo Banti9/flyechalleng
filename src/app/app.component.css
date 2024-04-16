@@ -1,0 +1,104 @@
+.user-profile {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile-header {
+    display: flex;
+  }
+  
+  .user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 20px;
+  }
+  
+  .user-details {
+    flex: 1;
+  }
+  
+  .user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .user-bio {
+    margin-bottom: 5px;
+  }
+  
+  .user-location {
+    margin-bottom: 5px;
+  }
+  
+  .user-twitter,
+  .user-github {
+    margin-bottom: 5px;
+  }
+  
+  .repository-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .repository-card {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .repository-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .repository-description {
+    margin-bottom: 10px;
+  }
+  
+  .repository-topics .topic {
+    display: inline-block;
+    background-color: #ccc;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .page-numbers {
+    display: flex;
+  }
+  
+  .page-number {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  

@@ -1,0 +1,20 @@
+<!-- <p>repository-list works!</p> -->
+<div *ngIf="repositories.length > 0; else noRepos" class="max-w-3xl mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Public Repositories</h2>
+    <ul>
+      <li *ngFor="let repo of repositories" class="mb-4 border border-gray-300 rounded-md p-4">
+        <h3 class="text-lg font-bold">{{ repo.name }}</h3>
+        <p class="text-gray-600">{{ repo.description }}</p>
+        <p class="text-sm text-gray-500 mt-2">Language: {{ repo.language }}</p>
+        <p class="text-sm text-gray-500 mt-2">Topics: {{ repo.topics.join(', ') }}</p>
+        <!-- Add more details as needed -->
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noRepos>
+    <div class="max-w-3xl mx-auto mt-8 text-center">
+      <p class="text-xl">No repositories found.</p>
+    </div>
+  </ng-template>
+  
